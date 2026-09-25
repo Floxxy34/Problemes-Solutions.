@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Problemes Solutions : des solutions claires et pratiques aux problemes du quotidien, des etudes, du numerique et de l'organisation.">
+    <meta name="theme-color" content="#123b35">
+    <meta property="og:title" content="Problemes Solutions | Des solutions qui avancent vraiment">
+    <meta property="og:description" content="Trouvez une reponse simple, etape par etape, aux problemes concrets de la vie quotidienne.">
+    <meta property="og:type" content="website">
+    <title>Problemes Solutions | Des solutions qui avancent vraiment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#accueil" aria-label="Problemes Solutions, accueil"><span class="brand-mark" aria-hidden="true">+</span><span>Problemes<span class="brand-accent">.</span>Solutions</span></a>
+        <nav class="main-nav" aria-label="Navigation principale"><a href="#problemes">Explorer</a><a href="#categories">Categories</a><a href="#a-propos">A propos</a></nav>
+        <a class="header-link" href="#problemes">Voir les solutions <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Le bon probleme, la bonne methode</p>
+            <h1>Des solutions qui font avancer les choses.</h1>
+            <p class="hero-intro">Des guides courts et concrets pour sortir d'un blocage, comprendre ce qui coince et passer a l'action sans se perdre dans le jargon.</p>
+            <form class="search-form hero-search" id="search-form" role="search"><label class="sr-only" for="search-input">Rechercher un probleme</label><span class="search-icon" aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Ex. : mon ordinateur est lent..." autocomplete="off"><button type="submit">Rechercher</button></form>
+            <div class="quick-links" aria-label="Recherches populaires"><span>Essayez :</span><button type="button" data-search="ordinateur lent">ordinateur lent</button><button type="button" data-search="budget">budget</button><button type="button" data-search="procrastination">procrastination</button></div>
+          </div>
+          <div class="hero-aside" aria-label="Apercu du fonctionnement"><div class="hero-note note-one"><span class="note-number">01</span><strong>Comprendre</strong><span>Le probleme explique sans detour</span></div><div class="hero-note note-two"><span class="note-number">02</span><strong>Agir</strong><span>Des etapes a suivre maintenant</span></div><div class="hero-note note-three"><span class="note-number">03</span><strong>Progresser</strong><span>Des habitudes qui tiennent dans le temps</span></div><span class="hero-scribble" aria-hidden="true">→</span></div>
+        </div>
+      </section>
+
+      <section class="category-strip" id="categories" aria-labelledby="categories-title"><div class="container"><div class="section-heading compact-heading"><p class="eyebrow">Choisir son terrain</p><h2 id="categories-title">Par ou commencer ?</h2></div><div class="category-list" id="category-list"></div></div></section>
+      <section class="problems-section" id="problemes" aria-labelledby="problems-title"><div class="container"><div class="section-heading problems-heading"><div><p class="eyebrow">La bibliotheque</p><h2 id="problems-title">Quel probleme voulez-vous resoudre ?</h2></div><p class="results-count" id="results-count" aria-live="polite"></p></div><div class="active-filter" id="active-filter" hidden><span id="filter-label"></span><button type="button" id="clear-filter" aria-label="Retirer le filtre">×</button></div><div class="problem-grid" id="problem-grid"></div><div class="empty-state" id="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌁</span><h3>Aucun probleme trouve</h3><p>Essayez un autre mot-cle ou parcourez une categorie.</p><button class="button button-light" type="button" id="reset-search">Voir tous les problemes</button></div></div></section>
+      <section class="about-section" id="a-propos" aria-labelledby="about-title"><div class="container about-grid"><div><p class="eyebrow eyebrow-light">Notre facon de faire</p><h2 id="about-title">Moins de bruit.<br><em>Plus de solutions.</em></h2></div><div class="about-copy"><p>Chaque fiche part d'une situation reelle et se termine par une prochaine action faisable. Pas de promesse magique : juste des explications accessibles, des methodes testables et des ressources choisies avec soin.</p><a class="text-link" href="#problemes">Explorer la bibliotheque <span aria-hidden="true">↗</span></a></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#accueil"><span class="brand-mark" aria-hidden="true">+</span><span>Problemes<span class="brand-accent">.</span>Solutions</span></a><p>Des reponses utiles, une etape a la fois.</p><p class="footer-note">Prototype independant · Contenu informatif</p></div></footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
